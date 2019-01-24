@@ -1,10 +1,13 @@
 # DEV Assessment
 
-Running the project
+This project is a skeleton project leveraging Vue, Bulma, and Webpack (NPM for dependencies).
+
+To run the project, use :
 
 ```
 npm run serve
 ```
+
 
 # Your Mission
 Your going to be using the [IEX API](https://iextrading.com/developer/docs/) to display stock tickers and data!
@@ -13,35 +16,52 @@ Your going to be using the [IEX API](https://iextrading.com/developer/docs/) to 
 - You must use Vue and Bulma
 - You can install any other packages available in the node ecosystem to help you complete the assessment (included are some helpful libs and home brewed elements)
 
-A basic example of using the API and the data it returns can be found on the symbols page when opening the app in the left hand menu.
+The base project **already includes** 
+- Pulling the necessary data from the API (for the base requirements)
+- A pre-built 
+    - route (to the symbols page)
+    - api service (to get IEX data)
+    - view (to display the list of symbols)
 
 ### Requirements
-- Select 5 [industries/lists](https://iextrading.com/developer/docs#list) of stocks of your choosing
-- Get the data with the [collections endpoint](https://iextrading.com/developer/docs/#collections)
-- Display each list of tickers separately (pages, selection buttons, dropdown etc) but in a reusable way. Keep this main list view tight and to the point
-- Allow performing these actions on the list (but no re-fetching from the API):
-    - Searching (on symbol and company name)
-    - Sorting (pick a few import data points, allow ascending and descending and visualize it well)
-    - Ability to pick data point (select at least 3 ie open price) and view only those tickers matching above, below, or a range (ie > 30, or >30 && < 50)
+Use the existing list of symbols being returned on the **Symbols** page to achieve the following :
+
+- Clean up and display the list of symbols in a UI/UX friendly way
+    - Leverage any of the available data points currently being returned by the API to achieve this
+
+- Allow performing these actions on the list (do NOT re-fetch the data from the API):
+    - **Searching** : On symbol and company name
+    - **Sorting** : Ascending and descending on at least 1 data point
+    - **Filtering** : On at least the following fields : 
+        - "open"
+        - "close" 
+        - "primaryExchange"
+
+
+### Bonus Points
+(These are not mandatory and if you choose to do any of these - please only choose one)
+
 - Ability to click a single stock ticker and navigate to a dedicated page (has it's own route and URL) for viewing it
     - Find and use the API end point for selecting a single ticker so you can load all possible information for it
     - Display as much or as little information as you like about the ticker in question
-        - At a minimum include most of the key data points in a well thought out consumable manner
-        - Use good white space (lots or very little up to you) and colors to make the data quickly understandable
-        - General thoughts on other possibilities
-            - Color coded indicators for price movements
-            - Graphs or charts of important data points
-            - Possibly querying for relevant news information from other API endpoints
+            
+- Allow **favoriting** symbols by storing them in local storage and possibly Vuex
+    - Add a menu item for viewing favorite symbols
 
-### Bonus Points
-- Allow favoriting symbols by storing them in local storage and possibly Vuex
-    - Add a menu item for viewing favorites
-    - Reuse your main lists component to display the favorites so you don't have to rewrite it and can inherit the searching/sorting/linking etc
-- Allow black listing symbols by storing them in local storage and then preventing them from displaying in your main lists component
+- Allow **excluding** symbols by storing them in local storage and then preventing them from displaying in your main lists component
+    - Add a menu item for viewing excluded symbols
+
 
 ### Finally
-- Add any assumptions you made, challenges you over came, or generally anything note worthy that you would like evaluated and discussed in the ASSUMPTIONS.md file in the root of this repo 
-- Commit your changes to a branch in this repo using your name as the branch name (don't push to master or you risk failing the assessment flat out)
+- Add any assumptions you made, challenges you over came, or anything note-worthy that you would like to have evaluated and/or discussed. Put these assumptions in the **ASSUMPTIONS.md** file.
+- Commit your changes to a branch called **[firstname]_[lastname]** in this repo using your name as the branch name (DON'T push to master)
+
+
+
+### Tips
+- Effective us of white space and colors to make the data consumable
+- Effective use of coloring to distinguish trends 
+
 
 
 #### Linting

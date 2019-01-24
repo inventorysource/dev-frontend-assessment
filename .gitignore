@@ -23,3 +23,6 @@ yarn-error.log*
 # Vim Files
 **.un~
 **.swp
+
+# webpack
+package-lock.json

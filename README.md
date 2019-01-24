@@ -2,6 +2,8 @@
 
 This project is a skeleton project leveraging Vue, Bulma, and Webpack (NPM for dependencies).
 
+This project is built in ES6 syntax ([example IDE configuration](https://stackoverflow.com/questions/35425915/how-do-i-enable-es6-syntax-in-webstorm))
+
 To run the project, use :
 
 ```

@@ -54,9 +54,9 @@ Use the existing list of symbols being returned on the **Symbols** page to achie
     - Add a menu item for viewing excluded symbols
 
 
-### Finally
+### Submission
 - Add any assumptions you made, challenges you over came, or anything note-worthy that you would like to have evaluated and/or discussed. Put these assumptions in the **ASSUMPTIONS.md** file.
-- Commit your changes to a branch called **[firstname]_[lastname]** in this repo using your name as the branch name (DON'T push to master)
+- Commit your changes to your own GitHub profile (or another public code repository) and send a link to the repository to the person that provided you this assessment. 
 
 
 

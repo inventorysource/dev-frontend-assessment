@@ -83,4 +83,4 @@ npm run lint --fix
 
 [Moment](https://momentjs.com/docs/) : Date helper
 
-[_](https://underscorejs.org/) : You should know
+[_ (underscore.js)](https://underscorejs.org/) : You should know

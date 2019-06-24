@@ -36,7 +36,7 @@ export default {
         };
     },
     beforeMount () {
-        API.getComputerHardwareCompanies().then(response => {
+        API.getCompanies().then(response => {
             this.companies = response.data;
         }).finally(() => {
             this.loading = false;

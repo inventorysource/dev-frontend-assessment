@@ -62,10 +62,11 @@ Use the existing list of symbols being returned on the **Symbols** page to achie
 - **Provide the # of hours you invested in the assessment in your submission**
 
 
-### "Nice To Have"s
+### Things that will distinguish you
 - Effective use of white space and colors to make the data consumable
 - Effective use of coloring to distinguish trends 
-
+- [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) programming
+- Leveraging [computed](https://vuejs.org/v2/guide/computed.html) properties
 
 #### Linting
 Getting [lint](https://eslint.org/) errors? Fix them with:

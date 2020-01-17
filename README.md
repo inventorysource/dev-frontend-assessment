@@ -15,6 +15,12 @@ npm install
 npm run serve
 ```
 
+You can then navigate to the application by going to the following URL in your browser 
+
+```
+http://localhost:8080
+```
+
 
 # Your Mission
 Your going to be using the [IEX Cloud API](https://iexcloud.io/docs/api/#collections) to display stock tickers and data!

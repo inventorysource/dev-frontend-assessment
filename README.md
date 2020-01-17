@@ -41,23 +41,19 @@ Use the existing list of symbols being returned on the **Symbols** page to achie
 - Allow performing these actions on the list (do NOT re-fetch the data from the API):
     - **Searching** : On symbol and company name
     - **Sorting** : Ascending and descending on at least 1 data point
-    - **Filtering** : Between a range of (at least) the following fields : 
-        - "open"
-        - "close" 
+    - **At least 1 of the below requirements (your choice)**
 
 
-### Bonus Points
-(These are not mandatory and if you choose to do any of these - please only choose one)
+### Choose at least 1 below
 
-- Ability to click a single stock ticker and navigate to a dedicated page (has it's own route and URL) for viewing it
+1. Ability to click a single stock ticker and navigate to a dedicated page (has it's own route and URL) for viewing it
     - Find and use the API end point for selecting a single ticker so you can load all possible information for it
-    - Display as much or as little information as you like about the ticker in question
             
-- Allow **favoriting** symbols by storing them in local storage and possibly Vuex
-    - Add a menu item for viewing favorite symbols
+2. Allow **favoriting** symbols by storing them in local storage or Vuex. 
+    - Either allow filtering to view favorited symbols or put these symbols at the top
 
-- Allow **excluding** symbols by storing them in local storage and then preventing them from displaying in your main lists component
-    - Add a menu item for viewing excluded symbols
+3. Allow **excluding** symbols by storing them in local storage or Vuex.
+    - Either allow filtering to view excluded symbols or put these at the bottom
 
 
 ### Submission
@@ -66,10 +62,9 @@ Use the existing list of symbols being returned on the **Symbols** page to achie
 - **Provide the # of hours you invested in the assessment in your submission**
 
 
-### Tips
+### "Nice To Have"s
 - Effective use of white space and colors to make the data consumable
 - Effective use of coloring to distinguish trends 
-
 
 
 #### Linting
@@ -89,4 +84,4 @@ npm run lint --fix
 
 [Moment](https://momentjs.com/docs/) : Date helper
 
-[_ (underscore.js)](https://underscorejs.org/) : You should know
+[_ (underscore.js)](https://underscorejs.org/) : JS helpers

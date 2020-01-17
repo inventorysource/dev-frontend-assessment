@@ -61,6 +61,8 @@ Use the existing list of symbols being returned on the **Symbols** page to achie
 3. Allow **excluding** symbols by storing them in local storage or Vuex.
     - Either allow filtering to view excluded symbols or put these at the bottom
 
+4. Some other functionality that demonstrates JS abilities and enhances interactions with these symbols
+    - Open ended requirement if you have other creative ideas for this page
 
 ### Submission
 - Add any assumptions you made, challenges you over came, or anything note-worthy that you would like to have evaluated and/or discussed. Put these assumptions in the **ASSUMPTIONS.md** file.

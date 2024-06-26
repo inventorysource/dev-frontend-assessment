@@ -10,14 +10,11 @@
           <loading v-if="loading"></loading>
           <div v-else>
               <div
-                  v-for="company in companies"
-                  :key="company.symbol"
-                  class="company"
+                  v-for="ticker in tickers"
+                  :key="ticker.symbol"
+                  class="ticker"
               >
-                  <h5 class="heading is-size-5">{{company.symbol}} : <small class="is-size-7">{{company.companyName}}</small></h5>
-                  <div>Open <money :value="company.open"></money></div>
-                  <div>Close <money :value="company.close"></money></div>
-                  <timestamp :value="company.openTime"></timestamp> - <timestamp :value="company.closeTime"></timestamp>
+                  <h5 class="heading is-size-5">{{ticker.displaySymbol}} : <small class="is-size-7">{{ticker.description}}</small></h5>
               </div>
           </div>
       </div>
@@ -26,18 +23,20 @@
 </template>
 
 <script>
-import API from '../api/IEX';
+
+import FinnhubApi from "@/api/FinnhubApi";
+
 export default {
     name : "Symbols",
     data () {
         return {
             loading : true,
-            companies : [],
+            tickers : [],
         };
     },
     beforeMount () {
-        API.getCompanies().then(response => {
-            this.companies = response.data;
+        FinnhubApi.getTickers().then(response => {
+            this.tickers = response.data;
         }).finally(() => {
             this.loading = false;
         });
@@ -47,7 +46,7 @@ export default {
 
 <style lang="scss" scoped>
     @import '../assets/css/_theme';
-    .company {
+    .ticker {
         margin-bottom:10px;
         padding-bottom:10px;
         border-bottom:1px solid $white-ter;
